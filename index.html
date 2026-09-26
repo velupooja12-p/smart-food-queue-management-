@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Food Court</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<header><div><h1>Smart Food Court</h1><p>Queue & Token Management System</p></div>
+<nav><button data-v="customer">Customer</button><button data-v="display">Display</button><button data-v="staff">Staff</button><button data-v="admin">Admin</button></nav></header>
+<main>
+<section id="customer" class="view active"><div class="hero"><div><h2>Order Food</h2><p>Select a meal session and food items.</p></div><b id="clock"></b></div><div id="sessions" class="grid"></div><div id="customerPanel" class="card"></div><div id="receipt" class="card hide"></div></section>
+<section id="display" class="view"><div class="display"><p id="ds"></p><small>NOW SERVING</small><div id="now">--</div><div id="up"></div><p id="dmsg"></p></div></section>
+<section id="staff" class="view"><div id="staffLogin" class="card"><h2>Staff Login</h2><input id="sp" type="password" placeholder="Password"><button id="slogin">Login</button><p>Demo password: staff123</p><b id="serr"></b></div><div id="staffPanel" class="hide"></div></section>
+<section id="admin" class="view"><div id="adminLogin" class="card"><h2>Admin Login</h2><input id="ap" type="password" placeholder="Password"><button id="alogin">Login</button><p>Demo password: admin123</p><b id="aerr"></b></div><div id="adminPanel" class="hide"></div></section>
+</main><footer id="conn">Connecting...</footer><script src="/app.js"></script></body></html>
